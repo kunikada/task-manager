@@ -1,0 +1,20 @@
+{
+    "servers": {
+        "redmine": {
+            "type": "stdio",
+            "command": "uvx",
+            "args": [
+                "--from",
+                "mcp-redmine",
+                "--refresh-package",
+                "mcp-redmine",
+                "mcp-redmine"
+            ],
+            "env": {
+                "REDMINE_URL": "https://your.redmine.server",
+                "REDMINE_API_KEY": "your-redmine-api-key",
+                "REDMINE_REQUEST_INSTRUCTIONS": "/path/to/redmine-instructions.md"
+            }
+        }
+    }
+}
